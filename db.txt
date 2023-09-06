@@ -1,0 +1,90 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 26, 2023 at 08:34 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `user_db_4`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_form_4`
+--
+
+CREATE TABLE `user_form_4` (
+  `name` varchar(100) NOT NULL,
+  `registration_number` bigint(20) NOT NULL,
+  `photo` varchar(100) NOT NULL,
+  `about` varchar(2000) NOT NULL,
+  `10_sch_name` varchar(100) NOT NULL,
+  `10_p_year` varchar(5) NOT NULL,
+  `10_board` varchar(10) NOT NULL,
+  `10_marks` varchar(100) NOT NULL,
+  `12_cl_name` varchar(100) NOT NULL,
+  `12_p_year` varchar(5) NOT NULL,
+  `12_board` varchar(10) NOT NULL,
+  `12_stream` varchar(20) NOT NULL,
+  `12_marks` varchar(10) NOT NULL,
+  `btech_ad_year` varchar(6) NOT NULL,
+  `btech_p_year` varchar(6) NOT NULL,
+  `btech_roll_no` varchar(15) NOT NULL,
+  `btech_dept` varchar(50) NOT NULL,
+  `btech_curr_cgpa` varchar(6) NOT NULL,
+  `con_num` varchar(15) NOT NULL,
+  `per_address` varchar(500) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `pincode` varchar(10) NOT NULL,
+  `lang_prof` varchar(100) NOT NULL,
+  `linkedin` varchar(200) NOT NULL,
+  `twitter` varchar(200) NOT NULL,
+  `github` varchar(200) NOT NULL,
+  `leetcode` varchar(200) NOT NULL,
+  `hackerrank` varchar(200) NOT NULL,
+  `instagram` varchar(200) NOT NULL,
+  `ach_1` varchar(50) NOT NULL,
+  `ach_2` varchar(200) NOT NULL,
+  `ach_3` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user_form_4`
+--
+
+INSERT INTO `user_form_4` (`name`, `registration_number`, `photo`, `about`, `10_sch_name`, `10_p_year`, `10_board`, `10_marks`, `12_cl_name`, `12_p_year`, `12_board`, `12_stream`, `12_marks`, `btech_ad_year`, `btech_p_year`, `btech_roll_no`, `btech_dept`, `btech_curr_cgpa`, `con_num`, `per_address`, `email`, `pincode`, `lang_prof`, `linkedin`, `twitter`, `github`, `leetcode`, `hackerrank`, `instagram`, `ach_1`, `ach_2`, `ach_3`) VALUES
+('7th_sem_project', 7, 'AgreementLetter.jpg', '7th_sem_project', '7th_sem_project', '7th_s', '7th_sem_pr', '7th_sem_project7th_sem_project', '7th_sem_project', '7th_s', '7th_sem_pr', '7th_sem_project', '7th_sem_pr', '7th_se', '7th_se', '7th_sem_project', '7th_sem_project', '7th_se', '7th_sem_project', '7th_sem_project', '7th_sem_project@gmail.com', '7th_sem_pr', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project', '7th_sem_project'),
+('NONE', 1234567890, 'hero-image.png', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE@gmail.com', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE'),
+('APARNA KUMARI', 1915125059, 'Aparna.jpeg', 'Highly motivated and dedicated fourth-year Computer Science Engineering student with a strong academic background and a passion for technology. Demonstrated proficiency in various programming languages and a solid understanding of software development principles.', 'Keshav Saraswati Vidya  Mandir', '2016', 'CBSE', '8.6', 'S.K.M Mahila college', '2018', 'BSEB', 'PCM', '60', '2019', '2023', '19-CSE-51', 'CSE', '8.05', '9304628251', 'Patel colony sandalpur more kumhrar patna -06 near sandal garden ,pnb atm', 'aparnakumari4294@gmail.com', '800006', 'Hindi, English, Urdu', 'https://www.linkedin.com/in/aparna', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'GATE QUALIFIED', 'CSCO CERTIFIED ', 'CISCO CERTIFIED NETWOKING EXPERT'),
+('PRIYADARSHANI', 19105125017, 'priya.jpeg', 'CURIOUS', 'UTKARMIT MS SISAUNI', '2017', 'BSEB', '81.8%', 'APS SENIOR SECONDARY SCHOOL, NAWKOTHI', '2019', 'BSEB', 'PCM', '76.4%', '2019', '2023', '19-CS-10', 'CSE', '7.73', '7667338020', 'BEGUSARAI,BIHAR,851101', 'PRIYARRSDCE@GMAIL.COM', '851101', 'HINDI,ENGLISH', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'CURIOUS_P', 'FRONTEND DEVELOPER', 'CURIOUS_P'),
+('Anubhav Kumar Jha', 19105125039, '1643370720408.jpg', 'Highly motivated and dedicated fourth-year Computer Science Engineering student with a strong academic background and a passion for technology. Demonstrated proficiency in various programming languages and a solid understanding of software development principles.', 'DAV Public School', '2017', 'CBSE', '8.4 CGPA', 'Rashtra High School', '2019', 'BSEB', 'PCM', '75', '2019', '2023', '19-CS-12', 'CSE', '8.04', '+916207780605', 'Khagaria', 'anubhavjha.cse@gmail.com', '851201', 'English, Hindi', 'https://www.linkedin.com/in/anubhav-kumar-jha-48b2751a6/', 'https://www.linkedin.com/in/anubhav-kumar-jha-48b2751a6/', 'https://www.linkedin.com/in/anubhav-kumar-jha-48b2751a6/', 'https://www.linkedin.com/in/anubhav-kumar-jha-48b2751a6/', 'https://www.linkedin.com/in/anubhav-kumar-jha-48b2751a6/', 'https://www.linkedin.com/in/anubhav-kumar-jha-48b2751a6/', '8.04 CGPA', 'State Chess Champion', 'Team Leader in Internship'),
+('NILESH KISHORE', 19105125044, 'NILESH.jpeg', 'I am Nilesh Kishore, a final year CSE student with a CGPA of 8.23. Passionate about technology, I have explored various aspects of computer science. With a drive for excellence and a thirst for knowledge, I am eager to make a meaningful impact in the ever-evolving world of technology.', ' SAV, MOTIHARI', '2016', 'CBSE', '9.4CGPA', 'K.T College', '2018', 'BSEB', 'SCIENCE', '66.2%', '2019', '2023', '19-CSE-03', 'CSE', '8.23', '7488602895', 'Motihari, Dist- East Champaran, Bihar', 'nileshkishore2001@gmail.com', '845401', 'English, Hindi, Bhojpuri', 'https://www.linkedin.com/in/nilesh-kishore-1b70381b2/', 'https://twitter.com/nilesh_kishore', 'https://github.com/Nileshkishore', 'https://leetcode.com/nileshkishore2001/', 'https://www.hackerrank.com/nileshkishore201', 'https://www.instagram.com/nilesh_kishore/', '1000+ Hour of Programming Experince', 'Gate Qualified 2023', '5 Star Coder at hackerrank');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user_form_4`
+--
+ALTER TABLE `user_form_4`
+  ADD PRIMARY KEY (`registration_number`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
